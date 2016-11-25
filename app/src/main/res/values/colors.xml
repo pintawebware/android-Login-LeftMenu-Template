@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+
+    <!--gps color-->
+    <color name="gps_status_no_connect">#F05050</color>
+    <color name="gps_status_connecting">#FF8820</color>
+    <color name="gps_status_connect">#21D31B</color>
+</resources>
