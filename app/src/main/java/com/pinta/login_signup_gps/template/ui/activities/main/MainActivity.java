@@ -154,7 +154,7 @@ public class MainActivity extends BaseMainActivity
      * Go to Login screen.
      */
     private void startLogin() {
-        startActivity(new Intent(this, LoginActivity.class));
+        startActivity(new Intent(context, LoginActivity.class));
         finish();
     }
 
@@ -170,6 +170,7 @@ public class MainActivity extends BaseMainActivity
     @Override
     public void onDestroy() {
         super.onDestroy();
+        Alarm.stopInfoAlarm(context);
         mPresenter.onDestroy();
     }
 }

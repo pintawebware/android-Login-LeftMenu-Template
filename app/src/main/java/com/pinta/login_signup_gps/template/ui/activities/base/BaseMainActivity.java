@@ -161,7 +161,9 @@ public abstract class BaseMainActivity extends AppCompatActivity implements Base
 
     @Override
     public void onLocationChanged(Location location) {
-        ((TextView) findViewById(R.id.tv_current_location)).setText(mGpsTrackerService.getLatitude() + ", " + mGpsTrackerService.getLongitude());
+        if (mGpsTrackerService != null) {
+            ((TextView) findViewById(R.id.tv_current_location)).setText(mGpsTrackerService.getLatitude() + ", " + mGpsTrackerService.getLongitude());
+        }
     }
 
     protected void log(Object o) {
